@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span class="error" id="usernameError"></span><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="passwordError"></span><br><br>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span class="error" id="confirmPasswordError"></span><br><br>
+
+        <input type="checkbox" id="confirmPassword" name="confirmPassword">
+        <label for="confirmPassword">YOU ARE NOT A ROBOT</label>
+        <span class="error" id="confirmPasswordError"></span><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+   
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('successPopup')">&times;</span>
+            <p>Submitted successfully!</p>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
